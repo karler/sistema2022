@@ -1,1 +1,1 @@
-# sistema2022
+# Ejemplo de un sistema simple en CodeIgniter
