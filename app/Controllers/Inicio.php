@@ -4,8 +4,13 @@ namespace App\Controllers;
 
 class Inicio extends BaseController
 {
-    public function index()
+    public function index($nombre, $edad)
     {
-        return view('frontend/admin/admin');
+        $datos = [
+            'nombre' => $nombre,
+            'apellidos' => "PIMENTEL ZEGARRA",
+            'edad' => $edad
+        ];
+        return view('frontend/admin/admin',$datos);
     }
 }
