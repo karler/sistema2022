@@ -2,9 +2,17 @@
 
 namespace App\Controllers;
 
+use App\Models\AlumnosModel;
+
 class Inicio extends BaseController
 {
-    public function index($nombre, $edad)
+    protected $modelalumnos;
+
+    public function __construct(){
+		$this->modelalumnos = new AlumnosModel();
+    }
+
+    public function index($nombre = "", $edad = 0)
     {
         $datos = [
             'nombre' => $nombre,
@@ -12,5 +20,15 @@ class Inicio extends BaseController
             'edad' => $edad
         ];
         return view('frontend/admin/admin',$datos);
+    }
+
+    public function veralumnos()
+    {
+        $resultado = $this->modelalumnos->findAll();
+        $datos = [
+            'titulo' => "Tabla Alumnos",
+            'datos' => $resultado
+        ];
+        return view('alumnos/lista',$datos);
     }
 }
