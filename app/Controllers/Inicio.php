@@ -22,13 +22,4 @@ class Inicio extends BaseController
         return view('frontend/admin/admin',$datos);
     }
 
-    public function veralumnos()
-    {
-        $resultado = $this->modelalumnos->findAll();
-        $datos = [
-            'titulo' => "Tabla Alumnos",
-            'datos' => $resultado
-        ];
-        return view('alumnos/lista',$datos);
-    }
 }
