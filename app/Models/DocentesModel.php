@@ -9,7 +9,7 @@ class DocentesModel extends Model
     protected $table      = 'docentes';
     protected $primaryKey = 'iddocente';
 
-    protected $useAutoIncrement = false;
+    protected $useAutoIncrement = true;
 
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;

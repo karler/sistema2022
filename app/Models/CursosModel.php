@@ -9,7 +9,7 @@ class CursosModel extends Model
     protected $table      = 'cursos';
     protected $primaryKey = 'idcurso';
 
-    protected $useAutoIncrement = false;
+    protected $useAutoIncrement = true;
 
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;

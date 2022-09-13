@@ -21,4 +21,22 @@ class Alumnos extends BaseController
         ];
         return view('alumnos/lista',$datos);
     }
+
+    public function nuevo(){
+        $datos = [
+            'titulo' => "Alumnos - Nuevo"
+        ];
+        return view('alumnos/nuevo',$datos);
+    }
+
+    public function guardar(){
+        $valores = [
+            'nombre' => $this->request->getpost('nombre'),
+            'apellidos' => $this->request->getpost('apellidos'),
+            'DNI' => $this->request->getpost('DNI'),
+            'celular' => $this->request->getpost('celular')
+        ];
+        $this->modelalumnos->insert($valores);
+        return redirect()->to("http://localhost/sistema2022/public/alumnos");
+    }
 }
