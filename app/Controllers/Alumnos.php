@@ -39,4 +39,25 @@ class Alumnos extends BaseController
         $this->modelalumnos->insert($valores);
         return redirect()->to("http://localhost/sistema2022/public/alumnos");
     }
+
+    public function editar($id){
+        $resultado = $this->modelalumnos->where('idalumno',$id)->first();
+        $datos = [
+            'titulo' => "Editar Alumno",
+            'datos' => $resultado
+        ];
+        return view('alumnos/editar',$datos);
+    }
+
+    public function actualizar(){
+        $id = $this->request->getpost('idalumno');
+        $valores = [
+            'nombre' => $this->request->getpost('nombre'),
+            'apellidos' => $this->request->getpost('apellidos'),
+            'DNI' => $this->request->getpost('DNI'),
+            'celular' => $this->request->getpost('celular')
+        ];
+        $this->modelalumnos->update($id,$valores);
+        return redirect()->to("http://localhost/sistema2022/public/alumnos");
+    }
 }

@@ -20,6 +20,7 @@
                     <th>Apellidos</th>
                     <th>DNI</th>
                     <th>Celular</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,6 +32,9 @@
                         echo "<td>{$fila['apellidos']}</td>";
                         echo "<td>".$fila['DNI']."</td>";
                         echo "<td>".$fila['celular']."</td>";
+                        $ruta1 = "";
+
+                        echo "<td><a class='btn btn-success'href='http://localhost/sistema2022/public/alumnos/editar/".$fila['idalumno']."'>Editar</a></td>";
                         echo "</tr>";
                     }
                 ?>

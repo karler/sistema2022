@@ -1,0 +1,28 @@
+CRITICAL - 2022-09-26 08:39:52 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 D:\xampp\htdocs\sistema2022\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('alumnos/nuevo')
+#1 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('alumnos/nuevo')
+#2 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sistema2022\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 08:40:31 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 D:\xampp\htdocs\sistema2022\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('alumnos/nuevo')
+#1 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('alumnos/nuevo')
+#2 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sistema2022\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 08:43:46 --> Undefined variable: datos
+#0 D:\xampp\htdocs\sistema2022\app\Controllers\Alumnos.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 49, Array)
+#1 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(825): App\Controllers\Alumnos->editar('2')
+#2 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumnos))
+#3 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sistema2022\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-09-26 08:53:52 --> syntax error, unexpected '$valores' (T_VARIABLE)
+#0 D:\xampp\htdocs\sistema2022\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('alumnos/editar/...')
+#1 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('alumnos/editar/...')
+#2 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\sistema2022\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
