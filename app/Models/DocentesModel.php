@@ -14,7 +14,7 @@ class DocentesModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['nombre', 'apellidos', 'DNI', 'celular'];
+    protected $allowedFields = ['nombre', 'apellidos', 'DNI', 'celular','activo'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

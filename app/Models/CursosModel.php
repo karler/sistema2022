@@ -14,7 +14,7 @@ class CursosModel extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['idalumno', 'iddocente', 'curso', 'creditos','notafinal'];
+    protected $allowedFields = ['idalumno', 'iddocente', 'curso', 'creditos','notafinal','activo'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

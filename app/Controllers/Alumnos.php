@@ -12,9 +12,9 @@ class Alumnos extends BaseController
 		$this->modelalumnos = new AlumnosModel();
     }
 
-    public function index()
+    public function index($activo=1)
     {
-        $resultado = $this->modelalumnos->findAll();
+        $resultado = $this->modelalumnos->where('activo',$activo)->findAll();
         $datos = [
             'titulo' => "Tabla Alumnos",
             'datos' => $resultado
@@ -59,5 +59,31 @@ class Alumnos extends BaseController
         ];
         $this->modelalumnos->update($id,$valores);
         return redirect()->to("http://localhost/sistema2022/public/alumnos");
+    }
+
+    public function eliminar($id){
+        $valores = [
+            'activo' => 0
+        ];
+        $this->modelalumnos->update($id,$valores);
+        return redirect()->to("http://localhost/sistema2022/public/alumnos");
+    }
+
+    public function eliminados($activo=0)
+    {
+        $resultado = $this->modelalumnos->where('activo',$activo)->findAll();
+        $datos = [
+            'titulo' => "Tabla Alumnos Eliminados",
+            'datos' => $resultado
+        ];
+        return view('alumnos/eliminados',$datos);
+    }
+
+    public function restaurar($id){
+        $valores = [
+            'activo' => 1
+        ];
+        $this->modelalumnos->update($id,$valores);
+        return redirect()->to("http://localhost/sistema2022/public/alumnos/eliminados");
     }
 }

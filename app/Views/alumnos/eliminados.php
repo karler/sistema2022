@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>tabla Alumnos</title>
+    <title><?=$titulo ?></title>
   </head>
   <body>
     <h1><?= $titulo ?></h1>
-    <a class="btn btn-danger" href='http://localhost/sistema2022/public/alumnos/eliminados'>Ver Eliminados</a>
+    <a class="btn btn-primary" href='http://localhost/sistema2022/public/alumnos'>Regresar</a>
         <table class="table">
             <thead>
                 <tr>
@@ -21,8 +21,7 @@
                     <th>Apellidos</th>
                     <th>DNI</th>
                     <th>Celular</th>
-                    <th>Editar</th>
-                    <th>Eliminar</th>
+                    <th>Restaurar</th>
                 </tr>
             </thead>
             <tbody>
@@ -35,9 +34,7 @@
                         echo "<td>".$fila['DNI']."</td>";
                         echo "<td>".$fila['celular']."</td>";
                         $ruta1 = "";
-
-                        echo "<td><a class='btn btn-success'href='http://localhost/sistema2022/public/alumnos/editar/".$fila['idalumno']."'>Editar</a></td>";
-                        echo "<td><a class='btn btn-danger'href='http://localhost/sistema2022/public/alumnos/eliminar/".$fila['idalumno']."'>Eliminar</a></td>";
+                        echo "<td><a class='btn btn-primary'href='http://localhost/sistema2022/public/alumnos/restaurar/".$fila['idalumno']."'>Restaurar</a></td>";
                         echo "</tr>";
                     }
                 ?>

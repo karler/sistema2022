@@ -1,0 +1,9 @@
+CRITICAL - 2022-09-27 09:50:21 --> There is no data to update.
+#0 D:\xampp\htdocs\sistema2022\system\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 D:\xampp\htdocs\sistema2022\system\Model.php(651): CodeIgniter\BaseModel->update(Array, Array)
+#2 D:\xampp\htdocs\sistema2022\app\Controllers\Alumnos.php(68): CodeIgniter\Model->update('12', Array)
+#3 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(825): App\Controllers\Alumnos->eliminar('12')
+#4 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alumnos))
+#5 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sistema2022\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
