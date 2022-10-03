@@ -12,6 +12,8 @@
   </head>
   <body>
     <h1><?= $titulo ?></h1>
+    
+    <a class="btn btn-primary" href='http://localhost/sistema2022/public/alumnos/nuevo'>Nuevo Alumno</a>
     <a class="btn btn-danger" href='http://localhost/sistema2022/public/alumnos/eliminados'>Ver Eliminados</a>
         <table class="table">
             <thead>
