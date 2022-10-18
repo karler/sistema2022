@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">  
-<head>    
-    <title><?= $titulo ?></title>    
-    <meta charset="UTF-8">
-    <meta name="title" content="Título de la WEB">
-    <meta name="description" content="Descripción de la WEB">    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>  
-<body>    
     <header>
-        <h1><?= $titulo ?></h1>      
+        <h1><?= $titulo ?></h1>   
+        <a class="btn btn-primary" href='http://localhost/sistema2022/public/alumnos'>Regresar</a>   
     </header>    
     <div class="jumbotron">
         <form method="POST" action="http://localhost/sistema2022/public/alumnos/guardar">
@@ -73,8 +63,3 @@
             </div>
         </form>
     </div>
-    <footer>
-        <h4>Ing. Jose Luis</h4>
-    </footer>
-</body>  
-</html>

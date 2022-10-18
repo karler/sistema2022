@@ -1,0 +1,36 @@
+CRITICAL - 2022-10-11 08:40:26 --> Invalid file: frondend/admin/admin.php
+#0 D:\xampp\htdocs\sistema2022\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('frondend/admin/...')
+#1 D:\xampp\htdocs\sistema2022\system\Common.php(1089): CodeIgniter\View\View->render('frondend/admin/...', Array, true)
+#2 D:\xampp\htdocs\sistema2022\app\Controllers\Inicio.php(14): view('frondend/admin/...')
+#3 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(825): App\Controllers\Inicio->index()
+#4 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#5 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sistema2022\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-11 08:40:46 --> Invalid file: frondend\admin\admin.php
+#0 D:\xampp\htdocs\sistema2022\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('frondend\\admin\\...')
+#1 D:\xampp\htdocs\sistema2022\system\Common.php(1089): CodeIgniter\View\View->render('frondend\\admin\\...', Array, true)
+#2 D:\xampp\htdocs\sistema2022\app\Controllers\Inicio.php(14): view('frondend\\admin\\...')
+#3 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(825): App\Controllers\Inicio->index()
+#4 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#5 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sistema2022\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-11 08:41:15 --> Invalid file: frontdend/admin/admin.php
+#0 D:\xampp\htdocs\sistema2022\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('frontdend/admin...')
+#1 D:\xampp\htdocs\sistema2022\system\Common.php(1089): CodeIgniter\View\View->render('frontdend/admin...', Array, true)
+#2 D:\xampp\htdocs\sistema2022\app\Controllers\Inicio.php(14): view('frontdend/admin...')
+#3 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(825): App\Controllers\Inicio->index()
+#4 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#5 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sistema2022\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-10-11 08:41:16 --> Invalid file: frontdend/admin/admin.php
+#0 D:\xampp\htdocs\sistema2022\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('frontdend/admin...')
+#1 D:\xampp\htdocs\sistema2022\system\Common.php(1089): CodeIgniter\View\View->render('frontdend/admin...', Array, true)
+#2 D:\xampp\htdocs\sistema2022\app\Controllers\Inicio.php(14): view('frontdend/admin...')
+#3 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(825): App\Controllers\Inicio->index()
+#4 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+#5 D:\xampp\htdocs\sistema2022\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\sistema2022\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

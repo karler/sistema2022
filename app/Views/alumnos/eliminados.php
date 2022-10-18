@@ -1,16 +1,4 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <title><?=$titulo ?></title>
-  </head>
-  <body>
     <h1><?= $titulo ?></h1>
     <a class="btn btn-primary" href='http://localhost/sistema2022/public/alumnos'>Regresar</a>
         <table class="table">
@@ -40,6 +28,3 @@
                 ?>
             </tbody>
         </table>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>

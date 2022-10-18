@@ -1,25 +1,18 @@
-<!doctype html>
-<html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <title><?= $titulo ?></title>
-  </head>
-  <body>
     <h1><?= $titulo ?></h1>
+    
+    <a class="btn btn-primary" href='http://localhost/sistema2022/public/docentes/nuevo'>Nuevo Alumno</a>
+    <a class="btn btn-danger" href='http://localhost/sistema2022/public/docentes/eliminados'>Ver Eliminados</a>
         <table class="table">
             <thead>
                 <tr>
-                    <th>Id Docente</th>
+                    <th>Id Alumno</th>
                     <th>Nombre</th>
                     <th>Apellidos</th>
                     <th>DNI</th>
                     <th>Celular</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,11 +24,12 @@
                         echo "<td>{$fila['apellidos']}</td>";
                         echo "<td>".$fila['DNI']."</td>";
                         echo "<td>".$fila['celular']."</td>";
+                        $ruta1 = "";
+
+                        echo "<td><a class='btn btn-success'href='http://localhost/sistema2022/public/docentes/editar/".$fila['iddocente']."'>Editar</a></td>";
+                        echo "<td><a class='btn btn-danger'href='http://localhost/sistema2022/public/docentes/eliminar/".$fila['iddocente']."'>Eliminar</a></td>";
                         echo "</tr>";
                     }
                 ?>
             </tbody>
         </table>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>

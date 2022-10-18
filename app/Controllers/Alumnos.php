@@ -19,14 +19,18 @@ class Alumnos extends BaseController
             'titulo' => "Tabla Alumnos",
             'datos' => $resultado
         ];
-        return view('alumnos/lista',$datos);
+        echo view('frontend/admin/cabecera');
+        echo view('alumnos/lista',$datos);
+        echo view('frontend/admin/pie');
     }
 
     public function nuevo(){
         $datos = [
-            'titulo' => "Alumnos - Nuevo"
+            'titulo' => "Nuevo Alumno"
         ];
-        return view('alumnos/nuevo',$datos);
+        echo view('frontend/admin/cabecera');
+        echo view('alumnos/nuevo',$datos);
+        echo view('frontend/admin/pie');
     }
 
     public function guardar(){
@@ -46,7 +50,9 @@ class Alumnos extends BaseController
             'titulo' => "Editar Alumno",
             'datos' => $resultado
         ];
-        return view('alumnos/editar',$datos);
+        echo view('frontend/admin/cabecera');
+        echo view('alumnos/editar',$datos);
+        echo view('frontend/admin/pie');
     }
 
     public function actualizar(){
@@ -73,10 +79,12 @@ class Alumnos extends BaseController
     {
         $resultado = $this->modelalumnos->where('activo',$activo)->findAll();
         $datos = [
-            'titulo' => "Tabla Alumnos Eliminados",
+            'titulo' => "Alumnos Eliminados",
             'datos' => $resultado
         ];
-        return view('alumnos/eliminados',$datos);
+        echo view('frontend/admin/cabecera');
+        echo view('alumnos/eliminados',$datos);
+        echo view('frontend/admin/pie');
     }
 
     public function restaurar($id){
